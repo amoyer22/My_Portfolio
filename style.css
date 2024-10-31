@@ -2,4 +2,47 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 15px 170px;
+    width: 100%;
+    height: auto;
+    background-color: gray;
+}
+.logoContainer{
+    display: flex;
+}
+.logoContainer .iconDiv{
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    font-size: 60px;
+}
+.logoContainer .textDiv h2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+.logoContainer .textDiv p{
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.navigation{
+    width: 450px;
+}
+.navigation ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.navigation a{
+    text-decoration: none;
+    color: black;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
