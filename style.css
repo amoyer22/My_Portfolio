@@ -22,16 +22,12 @@ header{
     display: flex;
     align-items: center;
     margin-right: 25px;
-    font-size: 60px;
+    font-size: 50px;
 }
 .logoContainer .textDiv h2{
     display: flex;
     align-items: center;
-    margin-bottom: 5px;
     font-size: 40px;
-}
-.logoContainer .textDiv p{
-    font-family: "Lucida Console", "Courier New", monospace;
 }
 .navigation{
     width: 450px;
@@ -45,4 +41,39 @@ header{
     text-decoration: none;
     color: black;
     font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 16px;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    padding: 0px 170px;
+    height: 100vh;
+    background-color: #bebebe;
+}
+.hero .heroTextDiv{
+    padding: 30px;
+    width: 600px;
+    height: auto;
+    background-color: white;
+}
+.hero .heroTextDiv h2{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 18px;
+    font-weight: normal;
+}
+.hero .heroTextDiv h1{
+    margin: 20px 0px;
+    font-size: 60px;
+}
+.hero .heroTextDiv p{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 18px;
+}
+.hero .heroTextDiv button{
+    margin-top: 50px;
+    width: 200px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 20px;
 }
