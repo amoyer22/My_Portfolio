@@ -244,6 +244,7 @@ header{
 }
 .projects .project{
     width: 19%;
+    height: auto;
     background-color: white;
     border: 2px solid #1a1a4e;
 }
@@ -255,23 +256,28 @@ header{
     border-bottom: 2px solid #1a1a4e;
 }
 .projects .project h3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
     text-align: center;
     font-size: 22px;
 }
-.projects .project p{
+.projects .projectTitle{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
-    height: 100px;
-    text-align: center;
+    padding: 10px;
+    height: 70px;
+}
+.projects .project p{
     line-height: 18px;
     font-family: "Lucida Console", "Courier New", monospace;
     font-size: 16px;
+}
+.projects .projectText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 100px;
+    text-align: center;
 }
 .projects .project button{
     width: 100%;
@@ -283,7 +289,11 @@ header{
     font-family: "Lucida Console", "Courier New", monospace;
     font-size: 18px;
 }
+.projects .project button:hover{
+    box-shadow: 0 0 30px #de65ff;
+}
 .projects .project button:active{
     color: #de65ff;
+    box-shadow: 0 0 30px #de65ff;
     background-color: #45459a;
 }
