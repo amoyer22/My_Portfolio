@@ -93,6 +93,7 @@ header{
     font-size: 60px;
 }
 .hero .heroTextDiv p{
+    line-height: 25px;
     font-family: "Lucida Console", "Courier New", monospace;
     font-size: 18px;
 }
@@ -143,7 +144,17 @@ header{
     text-align: center;
     font-size: 36px;
 }
+.about .aboutTextDiv h2:after{
+    display: block;
+    content: "\00a0";
+    margin: auto;
+    margin-top: 15px;
+    background-color: #de65ff;
+    width: 300px;
+    height: 4px;
+}
 .about .aboutTextDiv p{
+    text-align: center;
     line-height: 30px;
     font-family: "Lucida Console", "Courier New", monospace;
     font-size: 16px;
