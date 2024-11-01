@@ -13,7 +13,8 @@ header{
     padding: 15px 170px;
     width: 100%;
     height: auto;
-    background-color: gray;
+    background-color: #45459a;
+    border-bottom: 2px dashed #1a1a4e;
 }
 .logoContainer{
     display: flex;
@@ -22,11 +23,13 @@ header{
     display: flex;
     align-items: center;
     margin-right: 25px;
+    color: #fbebff;
     font-size: 50px;
 }
 .logoContainer .textDiv h2{
     display: flex;
     align-items: center;
+    color: #fbebff;
     font-size: 40px;
 }
 .navigation{
@@ -38,24 +41,38 @@ header{
     list-style-type: none;
 }
 .navigation a{
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    color: black;
+    color: #fbebff;
     font-family: "Lucida Console", "Courier New", monospace;
     font-size: 16px;
 }
-
+.navigation a:hover{
+    text-shadow: 2px 2px 2px #de65ff;
+}
+.navigation a:active{
+    color: #de65ff;
+    text-shadow: 2px 2px 2px #de65ff;
+}
+.navigation ion-icon{
+    margin-right: 10px;
+}
 .hero{
     display: flex;
     align-items: center;
     padding: 0px 170px;
     height: 100vh;
-    background-color: #bebebe;
+    background: #de65ff;
+    background: radial-gradient(circle, #de65ff 0%, #6e6eff 100%);
 }
 .hero .heroTextDiv{
     padding: 30px;
     width: 600px;
     height: auto;
-    background-color: white;
+    background-color: #fbebff;
+    color: #1a1a4e;
+    border: 3px dashed #1a1a4e;
 }
 .hero .heroTextDiv h2{
     font-family: "Lucida Console", "Courier New", monospace;
@@ -74,6 +91,21 @@ header{
     margin-top: 50px;
     width: 200px;
     height: 30px;
-    border: 2px solid black;
+    background-color: #6e6eff;
+    color: #fbebff;
+    border: 2px solid #45459a;
     border-radius: 20px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 16px;
+}
+.hero .heroTextDiv button:hover{
+    box-shadow: 3px 4px 5px #de65ff;
+}
+.hero .heroTextDiv button:active{
+    color: #de65ff;
+    background-color: #45459a;
+    border-color: #1a1a4e;
+}
+
+.about{
 }
