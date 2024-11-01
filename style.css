@@ -119,8 +119,8 @@ header{
 }
 
 .about{
-    padding: 70px 190px;
     display: flex;
+    padding: 70px 190px;
     justify-content: space-between;
     border-bottom: 1px solid #1a1a4e;
 }
@@ -151,13 +151,63 @@ header{
     content: "\00a0";
     margin: auto;
     margin-top: 15px;
-    background-color: #de65ff;
+    background: rgb(110,110,255);
+    background: linear-gradient(60deg, rgba(110,110,255,1) 0%, rgba(222,101,255,1) 100%);
     width: 300px;
     height: 4px;
 }
 .about .aboutTextDiv p{
     text-align: center;
     line-height: 30px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 16px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 190px;
+    border-bottom: 1px solid #1a1a4e;
+}
+.skills .skillsTextDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+.skills .skillsContentDiv{
+    width: 70%;
+}
+.skills .skillsTextDiv h2{
+    text-align: center;
+    font-size: 36px;
+}
+.skills .skillsTextDiv h2:after{
+    display: block;
+    content: "\00a0";
+    margin: auto;
+    margin-top: 15px;
+    background: rgb(110,110,255);
+    background: linear-gradient(60deg, rgba(110,110,255,1) 0%, rgba(222,101,255,1) 100%);
+    width: 250px;
+    height: 4px;
+}
+.skills .skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.skills .skill ion-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    color: #45459A;
+    font-size: 50px;
+}
+.skills .skillText p{
+    line-height: 20px;
     font-family: "Lucida Console", "Courier New", monospace;
     font-size: 16px;
 }
