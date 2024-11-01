@@ -211,3 +211,27 @@ header{
     font-family: "Lucida Console", "Courier New", monospace;
     font-size: 16px;
 }
+
+.projects{
+    padding: 70px 190px;
+    border-bottom: 1px solid #1a1a4e;
+}
+.projects .projectsTextDiv h2{
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 36px;
+}
+.projects .projectsTextDiv h2:after{
+    display: block;
+    content: "\00a0";
+    margin: auto;
+    margin-top: 15px;
+    background: rgb(110,110,255);
+    background: linear-gradient(60deg, rgba(110,110,255,1) 0%, rgba(222,101,255,1) 100%);
+    width: 250px;
+    height: 4px;
+}
+.projects .projectsList{
+    display: flex;
+    justify-content: space-between;
+}
