@@ -4,6 +4,12 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+::selection {
+    background: #de65ff;
+}
+::-moz-selection {
+    background: #de65ff;
+}
 
 body{
     background-color: #fbebff;
@@ -228,10 +234,56 @@ header{
     margin-top: 15px;
     background: rgb(110,110,255);
     background: linear-gradient(60deg, rgba(110,110,255,1) 0%, rgba(222,101,255,1) 100%);
-    width: 250px;
+    width: 300px;
     height: 4px;
 }
 .projects .projectsList{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
+}
+.projects .project{
+    width: 19%;
+    background-color: white;
+    border: 2px solid #1a1a4e;
+}
+.projects .project:hover{
+    box-shadow: 0 0 10px #3d1a4e;
+}
+.projects .project img{
+    width: 100%;
+    border-bottom: 2px solid #1a1a4e;
+}
+.projects .project h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    text-align: center;
+    font-size: 22px;
+}
+.projects .project p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 100px;
+    text-align: center;
+    line-height: 18px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 16px;
+}
+.projects .project button{
+    width: 100%;
+    height: 40px;
+    background-color: #6E6EFF;
+    color: #fbebff;
+    border: none;
+    border-top: 2px solid #1a1a4e;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 18px;
+}
+.projects .project button:active{
+    color: #de65ff;
+    background-color: #45459a;
 }
