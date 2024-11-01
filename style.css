@@ -5,16 +5,21 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    background-color: #fbebff;
+    color: #1a1a4e;
+}
+
 header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    padding: 15px 170px;
+    padding: 15px 190px;
     width: 100%;
     height: auto;
     background-color: #45459a;
-    border-bottom: 2px dashed #1a1a4e;
+    border-bottom: 1px solid #1a1a4e;
 }
 .logoContainer{
     display: flex;
@@ -61,10 +66,11 @@ header{
 .hero{
     display: flex;
     align-items: center;
-    padding: 0px 170px;
+    padding: 0px 190px;
     height: 100vh;
     background: #de65ff;
     background: radial-gradient(circle, #de65ff 0%, #6e6eff 100%);
+    border-bottom: 1px solid #1a1a4e;
 }
 .hero .heroTextDiv{
     padding: 30px;
@@ -72,7 +78,10 @@ header{
     height: auto;
     background-color: #fbebff;
     color: #1a1a4e;
-    border: 3px dashed #1a1a4e;
+    border: 2px dashed #1a1a4e;
+}
+.hero .heroTextDiv:hover{
+    box-shadow: 0 0 20px #3d1a4e;
 }
 .hero .heroTextDiv h2{
     font-family: "Lucida Console", "Courier New", monospace;
@@ -108,4 +117,34 @@ header{
 }
 
 .about{
+    padding: 70px 190px;
+    display: flex;
+    justify-content: space-between;
+}
+.about .aboutImageDiv{
+    width: 47%;
+}
+.about .aboutImageDiv img{
+    width: 460px;
+    height: auto;
+    border: 1px solid #1a1a4e;
+}
+.about .aboutImageDiv img:hover{
+    box-shadow: 0 0 20px #3d1a4e;
+}
+.about .aboutTextDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 47%;
+}
+.about .aboutTextDiv h2{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 36px;
+}
+.about .aboutTextDiv p{
+    line-height: 30px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 16px;
 }
