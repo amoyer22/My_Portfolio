@@ -297,3 +297,23 @@ header{
     box-shadow: 0 0 30px #de65ff;
     background-color: #45459a;
 }
+
+.contacts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 190px;
+    background-color: #45459a;
+    color: #fbebff;
+}
+.contacts .contactsTextDiv h2{
+    display: flex;
+    text-align: center;
+    font-size: 36px;
+}
+.contacts .contact{
+    display: flex;
+}
+.contacts .contactIcon{
+    margin-right: 20px;
+}
