@@ -1,0 +1,319 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+::selection {
+    background: #de65ff;
+}
+::-moz-selection {
+    background: #de65ff;
+}
+
+body{
+    background-color: #fbebff;
+    color: #1a1a4e;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 15px 190px;
+    width: 100%;
+    height: auto;
+    background-color: #45459a;
+    border-bottom: 1px solid #1a1a4e;
+}
+.logoContainer{
+    display: flex;
+}
+.logoContainer .iconDiv{
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    color: #fbebff;
+    font-size: 50px;
+}
+.logoContainer .textDiv h2{
+    display: flex;
+    align-items: center;
+    color: #fbebff;
+    font-size: 40px;
+}
+.navigation{
+    width: 450px;
+}
+.navigation ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.navigation a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fbebff;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 16px;
+}
+.navigation a:hover{
+    text-shadow: 2px 2px 2px #de65ff;
+}
+.navigation a:active{
+    color: #de65ff;
+    text-shadow: 2px 2px 2px #de65ff;
+}
+.navigation ion-icon{
+    margin-right: 10px;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    padding: 0px 190px;
+    height: 100vh;
+    background: #de65ff;
+    background: radial-gradient(circle, #de65ff 0%, #6e6eff 100%);
+    background-attachment: fixed;
+    border-bottom: 1px solid #1a1a4e;
+}
+.hero .heroTextDiv{
+    padding: 30px;
+    width: 600px;
+    height: auto;
+    background-color: #fbebff;
+    color: #1a1a4e;
+    border: 2px dashed #1a1a4e;
+}
+.hero .heroTextDiv:hover{
+    box-shadow: 0 0 20px #3d1a4e;
+}
+.hero .heroTextDiv h2{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 18px;
+    font-weight: normal;
+}
+.hero .heroTextDiv h1{
+    margin: 20px 0px;
+    font-size: 60px;
+}
+.hero .heroTextDiv p{
+    line-height: 25px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 18px;
+}
+.hero .heroTextDiv button{
+    margin-top: 50px;
+    width: 200px;
+    height: 30px;
+    background-color: #6e6eff;
+    color: #fbebff;
+    border: 2px solid #45459a;
+    border-radius: 20px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 16px;
+}
+.hero .heroTextDiv button:hover{
+    box-shadow: 3px 4px 5px #de65ff;
+}
+.hero .heroTextDiv button:active{
+    color: #de65ff;
+    background-color: #45459a;
+    border-color: #1a1a4e;
+}
+
+.about{
+    display: flex;
+    padding: 70px 190px;
+    justify-content: space-between;
+    border-bottom: 1px solid #1a1a4e;
+}
+.about .aboutImageDiv{
+    width: 47%;
+}
+.about .aboutImageDiv img{
+    width: 460px;
+    height: auto;
+    border: 1px solid #1a1a4e;
+}
+.about .aboutImageDiv img:hover{
+    box-shadow: 0 0 20px #3d1a4e;
+}
+.about .aboutTextDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 47%;
+}
+.about .aboutTextDiv h2{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 36px;
+}
+.about .aboutTextDiv h2:after{
+    display: block;
+    content: "\00a0";
+    margin: auto;
+    margin-top: 15px;
+    background: rgb(110,110,255);
+    background: linear-gradient(60deg, rgba(110,110,255,1) 0%, rgba(222,101,255,1) 100%);
+    width: 300px;
+    height: 4px;
+}
+.about .aboutTextDiv p{
+    text-align: center;
+    line-height: 30px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 16px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 190px;
+    border-bottom: 1px solid #1a1a4e;
+}
+.skills .skillsTextDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+.skills .skillsContentDiv{
+    width: 70%;
+}
+.skills .skillsTextDiv h2{
+    text-align: center;
+    font-size: 36px;
+}
+.skills .skillsTextDiv h2:after{
+    display: block;
+    content: "\00a0";
+    margin: auto;
+    margin-top: 15px;
+    background: rgb(110,110,255);
+    background: linear-gradient(60deg, rgba(110,110,255,1) 0%, rgba(222,101,255,1) 100%);
+    width: 250px;
+    height: 4px;
+}
+.skills .skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.skills .skill ion-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    color: #45459A;
+    font-size: 50px;
+}
+.skills .skillText p{
+    line-height: 20px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 16px;
+}
+
+.projects{
+    padding: 70px 190px;
+    border-bottom: 1px solid #1a1a4e;
+}
+.projects .projectsTextDiv h2{
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 36px;
+}
+.projects .projectsTextDiv h2:after{
+    display: block;
+    content: "\00a0";
+    margin: auto;
+    margin-top: 15px;
+    background: rgb(110,110,255);
+    background: linear-gradient(60deg, rgba(110,110,255,1) 0%, rgba(222,101,255,1) 100%);
+    width: 300px;
+    height: 4px;
+}
+.projects .projectsList{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.projects .project{
+    width: 19%;
+    height: auto;
+    background-color: white;
+    border: 2px solid #1a1a4e;
+}
+.projects .project:hover{
+    box-shadow: 0 0 10px #3d1a4e;
+}
+.projects .project img{
+    width: 100%;
+    border-bottom: 2px solid #1a1a4e;
+}
+.projects .project h3{
+    text-align: center;
+    font-size: 22px;
+}
+.projects .projectTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 70px;
+}
+.projects .project p{
+    line-height: 18px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 16px;
+}
+.projects .projectText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 100px;
+    text-align: center;
+}
+.projects .project button{
+    width: 100%;
+    height: 40px;
+    background-color: #6E6EFF;
+    color: #fbebff;
+    border: none;
+    border-top: 2px solid #1a1a4e;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 18px;
+}
+.projects .project button:hover{
+    box-shadow: 0 0 30px #de65ff;
+}
+.projects .project button:active{
+    color: #de65ff;
+    box-shadow: 0 0 30px #de65ff;
+    background-color: #45459a;
+}
+
+.contacts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 190px;
+    background-color: #45459a;
+    color: #fbebff;
+}
+.contacts .contactsTextDiv h2{
+    display: flex;
+    text-align: center;
+    font-size: 36px;
+}
+.contacts .contact{
+    display: flex;
+}
+.contacts .contactIcon{
+    margin-right: 20px;
+}
